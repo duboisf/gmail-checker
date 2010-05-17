@@ -1,0 +1,7 @@
+To build you need buildr.
+
+To build, just do:
+buildr
+
+to run, do
+buildr gmail-checker:run
