@@ -36,11 +36,11 @@ object GmailChecker {
     }
   }
 
-  def getCredentials: UsernamePasswordCredentials = {
+  def getCredentials(): UsernamePasswordCredentials = {
     val username = readConsole("gmail username: ")
     if (username.isEmpty)
       System.exit(1)
-    val password = getPwd("Enter password for '" + authScope + "': ")
+    val password = getPwd("Enter password: ")
     if (password.isEmpty)
       System.exit(1)
     new UsernamePasswordCredentials(username.get, password.get)
