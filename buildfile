@@ -13,6 +13,8 @@ repositories.remote << "http://www.ibiblio.org/maven2"
 COMPONENTS = transitive('org.apache.httpcomponents:httpclient:jar:4.0.1')
 HTTPCLIENT = transitive('commons-httpclient:commons-httpclient:jar:3.1')
 
+task :run => ["gmail-checker:run"]
+
 desc "The Gmail-checker project"
 define "gmail-checker" do
 
